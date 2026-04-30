@@ -289,18 +289,66 @@ footer p{
     transform: scale(1.2);
     background: #2263dc;
 }
-@media(max-width: 700px) {
-    .wrapper{
-        padding: 40px;
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 30px 20px;
     }
-    .card-list {
-        display: grid;
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .card-list, .benefits-cards {
         flex-wrap: wrap;
     }
-
+    .career-card, .benefit-card {
+        max-width: calc(50% - 20px);
+        flex: 1 1 calc(50% - 20px);
+    }
 }
-@media(max-width: 1000px) {
-    .wrapper{
-        padding: 60px;
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0 60px 0;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .code-icon {
+        display: none;
+    }
+    .section-title {
+        font-size: 1.5rem;
+        top: 55px;
+    }
+    .card-list, .benefits-cards {
+        flex-direction: column;
+    }
+    .career-card, .benefit-card {
+        max-width: 100%;
+        min-height: auto;
+    }
+    .badge {
+        margin: 0 0 15px 0;
+    }
+    .chat-button {
+        width: 60px;
+        height: 60px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .roadmap-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 }
